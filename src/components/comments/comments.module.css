@@ -1,0 +1,11 @@
+.rootWrapper {
+    display: flex;
+    align-items:flex-start;
+}
+.commentContiner {
+    margin: 10px 0;
+}
+
+.replyInputContainer {
+    margin: 10px;
+}

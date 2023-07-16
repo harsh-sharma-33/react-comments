@@ -1,0 +1,27 @@
+.button {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.flat.warn {
+    color: white;
+    background-color: red;
+}
+
+.flat.primary {
+    color: white;
+    background-color: blue;
+}
+
+.stroked.warn {
+    color: red;
+    background-color: transparent;
+    border: 1px solid red;
+}
+
+.stroked.primary {
+    color: blue;
+    background-color: transparent;
+    border: 1px solid blue;
+}
