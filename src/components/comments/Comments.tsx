@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useEffect, useState } from 'react'
+import { useState } from 'react'
 import ICommentData from '../../interfaces/ICommentData'
 import { IFormGeneratorInput } from '../../interfaces/IFormGeneratorInput';
 import { FieldType } from '../../enums/FieldType';
@@ -140,7 +140,7 @@ const Comments = (props: Props) => {
         style: {
             marginLeft: 10
         },
-        function: (buttonRef: IButtonGeneratorInput, params?: any[]) => {
+        function: (_buttonRef: IButtonGeneratorInput, params?: any[]) => {
             const commentId = params![0] as symbol
             props.setCommentsData((prev: ICommentData[]) => {
                 return deleteComment(prev, commentId)
@@ -154,7 +154,7 @@ const Comments = (props: Props) => {
         style: {
             marginLeft: 10
         },
-        function: (buttonRef: IButtonGeneratorInput, params?: any[]) => {
+        function: (_buttonRef: IButtonGeneratorInput, params?: any[]) => {
             const commentId = params![0] as symbol
             const action = params![1] as string
             if (action === 'toggle') {

@@ -1,4 +1,3 @@
-import React from 'react'
 import { ButtonColor, ButtonType, IButtonGeneratorInput } from '../../interfaces/IButtonGeneratorInput'
 import styles from './Button.module.css'
 type Props = {
